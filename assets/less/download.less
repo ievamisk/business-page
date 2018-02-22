@@ -1,0 +1,148 @@
+.download {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+    padding: 109px 0 107px 0;
+    background: linear-gradient(142.44deg, rgba(112, 56, 228, 1) 0%, rgba(73, 56, 228, 1) 100%);
+    
+    @media screen and (max-width: @tablet) {
+        flex-direction: column;
+        padding: 0 0 50px 0;
+    }
+
+    &-header {
+        width: 394px;
+        background: linear-gradient(142.44deg, #7E41FE 0%, #6967FF 100%);
+        box-shadow: 0 0 133px 0 rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: @tablet) {
+            width: 100%;
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        &-title {
+            width: 223px;
+            color: @white;
+            font-size: 26px;
+            line-height: 39px;
+            font-weight: 400;
+            margin-left: 150px;
+            margin-right: 21px;
+            
+            @media screen and (max-width: @tablet) {
+                width: 100%;
+                margin: 0;
+                font-size: 20px;
+            }
+
+            &-yellow {
+                width: 223px;
+                color: @yellow;
+                font-size: 33px;
+                font-weight: bold;
+                line-height: 37px;
+
+                @media screen and (max-width: @tablet) {
+                    font-size: 27px;
+                }
+    
+            }
+        }
+    }
+
+    &-form {
+        width: 100%;
+
+        &-list {
+            list-style-type: none;
+            padding: 66px 0 50px 0;
+            margin-left: 94px;
+
+            @media screen and (max-width: @tablet) {
+                width: 80%;
+                margin: 0 auto;
+                padding: 36px 0 30px 0;
+            }
+        
+            &-input {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                border-bottom: 1px solid #7453F1;
+
+                &-number {
+                    width: 27px;
+                    color: #8F63FF;
+                    font-size: 19px;
+                    font-weight: bold;
+                    line-height: 56px;
+                    position: relative;
+                    top: 2px;
+                    margin-right: 17px;
+                }
+
+                &-field {
+                    display: flex;
+                    flex-flow: column-reverse;
+
+                    & > input {
+                        background: transparent;
+                        border: none;
+                        padding: 0;
+                        position: relative;
+                        bottom: 8px;
+                        color: @yellow;
+                        font-size: 18px;
+                        font-weight: bold;
+                        line-height: 24px;
+                      }
+                      
+                    & > input:focus {
+                        outline: 0;
+                    }
+
+                    & > label { 
+                        position: relative;
+                        top: 10px;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: @light-purple;
+                        transition:0.2s ease all; 
+                        cursor: text;
+
+                    }
+                    & > input:focus + label, input:valid + label {
+                        top: -5px;
+                        font-size: 13px;
+                    }                    
+                }
+            }
+
+            &-button {
+                height: 40px;
+                width: 130px;
+                background-color: @yellow;
+                border: none;
+                margin-left: 89px;
+        
+                &-text {
+                    height: 24px;
+                    width: 50px;
+                    color: @black;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 24px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+   
+}
+
+

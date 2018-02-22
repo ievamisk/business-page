@@ -1,0 +1,82 @@
+.header {
+    position: relative;
+    height: 576px;
+    width: 100%;
+    background-color: @black;
+
+    @media screen and (max-width: @tablet) {
+        height: 250px;
+    }
+
+    &-title {
+        height: 225px;
+        color: @white;
+        font-size: 95px;
+        font-weight: bold;
+        margin: 0;
+        padding-left: 77px;
+        margin-bottom: 29px;
+
+        @media screen and (max-width: @tablet) {
+            height: 125px;
+            font-size: 45px;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        &-block {
+            position: absolute;
+            bottom: 83px;
+            z-index: 1;
+            width: 100%;
+
+            @media screen and (max-width: @tablet) {
+                bottom: 50px;
+
+            }
+        }
+
+        &-yellow {
+            position: relative;
+            top: -60px;
+            color: @yellow;
+            font-size: 130px;
+            font-weight: bold;
+
+            @media screen and (max-width: @tablet) {
+                font-size: 62px;
+                top: -28px
+            }
+        }
+    }
+
+    &-line {
+
+        height: 13px;
+        width: 483px;
+        background: linear-gradient(142.44deg, #7038E4 0%, #4938E4 100%);
+        
+        @media screen and (max-width: @tablet) {
+            width: 80%;
+    
+        }
+    }
+
+    &-images {
+        margin-left: 428px;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+
+
+        & > .image {
+            position: relative;
+            background-position: center;
+            background-size: cover;  
+        }
+
+        @media screen and (max-width: @tablet) {
+            display: none;
+        }
+    }
+}

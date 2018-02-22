@@ -1,0 +1,26 @@
+{
+  "name": "business-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ievamisk/business-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ievamisk/business-page/issues"
+  },
+  "homepage": "https://github.com/ievamisk/business-page#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-less": "^3.5.0",
+    "gulp-minify": "^2.1.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,25 @@
+@max-width: 1024px;
+@tablet: 768px;
+@mobile: 320px;
+
+@import "colors";
+@import "header";
+@import "projects";
+@import "about-us";
+@import "our-services";
+@import "know-us";
+@import "download";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: @white;
+    font-family: "Noto Sans";
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: @max-width;
+    width: 100%;
+    margin: 0 auto;
+}
