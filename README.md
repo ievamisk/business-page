@@ -3,5 +3,5 @@
 * Created using HTML, CSS (LESS)
 * Responsive
 
-## Launching
+## LAUNCHING
 Just open index.html :)
